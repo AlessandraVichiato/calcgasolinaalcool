@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora Álcool ou Gasolina</title>
+    <meta name="keywords" content="Calculadora gasolina ou álcool">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style.css'>
+    
+</head>
+
+<body>
+
+        <main class="container">
+            <img class="logo" src="./imagens/Bomba de Gasolina.jpeg" alt="Logo da calculadora gasolina ou álcool"/>
+            <h1 class="title">Qual melhor opção?</h1>
+    
+            <form class="form" onsubmit="calcular(event)">
+                <label>Álcool (preço por litro):</label>
+                <input 
+                    id="alcool"
+                    class="input"
+                    type="number" 
+                    placeholder="R$ 0.00"
+                    min="1"
+                    step="0.01"
+                    required
+                />
+    
+                <label>Gasolina (preço por litro):</label>
+                <input 
+                    id="gasolina"
+                    class="input"
+                    type="number" 
+                    placeholder="R$ 0.00"
+                    min="1"
+                    step="0.01"
+                    required
+                />
+    
+                <input class="button" type="submit" value="Calcular" />
+            </form>
+    
+            <section class="result hide" id="content-result">
+                <span id="text-result"></span>
+    
+                <span id="alcool-result"></span>
+                <span id="gasolina-result"></span>
+            </section>
+    
+        </main>
+    
+        <div class="info">
+        <span class="tooltip"> Veja como é feito o cálculo </span>
+            <a href="calculo.html" target="_blank">
+              <img class="info-img" src="./imagens/InfoCard.jpeg" alt="Veja como é feito o cálculo" />
+            </a>
+        </div>
+
+        <div class="mecanic">
+
+                <a href="https://app.brancher.ai/e9fdbb4b-e06c-4e01-afd4-a7d90f3a394e" target="_blank">
+                    <img class="mecanic-img" src="imagens/Mecanico2.jpeg" alt="Seu carro está com problema? Clique aqui" />
+                </a>
+            <span class="mecanictip"> Seu carro está com problema? Clique aqui </span>
+        </div>
+        
+        <script src="script.js"> </script>
+    </body>
+    
+</body>
+</html>
